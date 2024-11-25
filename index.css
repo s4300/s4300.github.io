@@ -1,0 +1,79 @@
+body {
+    /* center items */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* fit content */
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    /* bg */
+    background-image: url("./assets/background.png");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+
+    /* font */
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+h1 {
+    /* font */
+    color: white;
+    font-size: 80px;
+
+    /* spacing */
+    margin: 0;
+
+    /* shadow */
+    text-shadow: 0px 0px 45px black;
+}
+
+label {
+    /* font */
+    font-size: 20px;
+    color: white;
+
+    /* shadow */
+    text-shadow: 0px 0px 10px black;
+}
+
+.icon {
+    margin-top: 3.5px;
+    padding: 10px;
+    width: 35px;
+    height: auto;
+    transition: all 0.2s ease;
+}
+
+.icon:hover {
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#x {
+    content: url("./assets/x.svg");
+}
+
+#x:hover {
+    content: url("./assets/twitter.svg");
+}
+
+#icons {
+    /* spacing */
+    margin-top: 15px;
+    padding-left: 3px;
+    padding-right: 3px;
+    
+    /* glass effect */
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+    border-radius: 15px;
+}
